@@ -1,0 +1,18 @@
+documentationUrl: https://docs.airbyte.io/integrations/sources/exchangeratesapi
+connectionSpecification:
+  $schema: http://json-schema.org/draft-07/schema#
+  title: exchangeratesapi.io Source Spec
+  type: object
+  required:
+    - offset
+    - token
+  additionalProperties: false
+  properties:
+    offset:
+      type: string
+      description: Quantity lines in run, max 5000.
+    token:
+      type: string
+      description: >-
+        Your token Key. 
+      airbyte_secret: true
